@@ -1,0 +1,25 @@
+public class VarArgs {
+    
+    
+    
+    
+        public static void main(String[] args) {
+        int result1 = product(2, 3, 4, 5);
+        int result2 = product(2, 4, 6);
+        int result3 = product(1, 2, 3, 4, 5, 6, 7);
+
+        System.out.println("Product 1: " + result1);
+        System.out.println("Product 2: " + result2);
+        System.out.println("Product 3: " + result3);
+    }
+
+    public static int product(int... number) {
+        int result = 1;
+        for (int num : number) {
+            result *= num;
+        }
+        return result;
+    }
+}
+    
+    
