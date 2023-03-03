@@ -1,0 +1,25 @@
+
+import java.util.Arrays;
+
+
+public class test {
+    
+ public static void main(String[] args) {
+        
+int[] counts = new int[10];
+    Arrays.fill(counts, 0);
+
+    int[] bonus = new int[15];
+    Arrays.fill(bonus, 1);
+    for (int i = 0; i < bonus.length; i++) {
+        bonus[i]++;
+    }
+
+    int[] bestScores = { 95, 92, 91, 97, 88 };
+    System.out.println("Best Scores:");
+    for (int i = 0; i < bestScores.length; i++) {
+        System.out.printf("%d%n", bestScores[i]);
+    }
+}
+
+     
